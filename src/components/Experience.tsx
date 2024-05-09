@@ -1,5 +1,4 @@
 import Card from "@components/ui/Card";
-import { IconArrowUpRight } from "@/icons";
 import Link from "./ui/Link";
 
 function Experience() {
@@ -11,8 +10,8 @@ function Experience() {
       <h2 className="font-medium mb-5 lg:hidden tracking-wider">EXPERIENCE</h2>
       <Card
         title="Software Engineer"
-        org="Relisource"
-        body="Build, maintain, and ship production codes for client applications. Improve system performance and security. Create new features and maintain existing ones. Write and update unit tests."
+        org="ReliSource"
+        body="Build, maintain, and ship production codes for client applications. Improve system performance and security. Closely work with cross functional teams to design and implement new systems. Worked with the UI team to engineer and improve major features."
         skills={[
           "Ruby on Rails",
           "Apex",
@@ -24,7 +23,7 @@ function Experience() {
           "Azure",
         ]}
         duration="2022 - PRESENT"
-        href="https://www.relisource.com/"
+        url="https://www.relisource.com/"
       />
 
       {/* <Card
@@ -36,7 +35,7 @@ function Experience() {
         duration="2023 - PRESENT"
       /> */}
 
-      <div className="mt-8 py-1">
+      <div className="mt-8">
         <Link title="View Full Résumé" url="./resume.pdf" />
       </div>
     </section>

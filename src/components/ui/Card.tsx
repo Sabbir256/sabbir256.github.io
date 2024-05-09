@@ -7,21 +7,21 @@ type Props = {
   skills?: string[];
   duration?: string;
   promotions?: string[];
-  href?: string;
+  url?: string;
 };
 
-function Card({ title, org, body, skills, duration, promotions, href }: Props) {
+function Card({ title, org, body, skills, duration, promotions, url }: Props) {
   return (
     <div
       className="mb-12 lg:mb-6 group hover:cursor-pointer w-full hover:bg-blue-300/10 lg:py-4 lg:px-6 rounded flex flex-col lg:flex-row items-start gap-2 lg:gap-4 transition-colors"
-      onClick={() => window.open(href, "_blank")}
+      onClick={() => window.open(url, "_blank")}
     >
       <div className="leading-wider text-xs font-semibold lg:whitespace-nowrap lg:mt-1 text-gray-600">
         {duration ?? ""}
       </div>
       <div className="flex flex-col">
         <a
-          href={href}
+          href={url}
           target="_blank"
           rel="noreferrer noopener"
           aria-label={`${title} at ${org} (opens ins a new tab)`}
