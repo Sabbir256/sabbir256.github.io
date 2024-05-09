@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,4 +17,12 @@
 
 :root {
   --p-c-black: #1b1b1b;
+  --p-c-ivory: #fffff0;
+  --p-c-off-white: #fbfbfb;
+  --p-c-ghost-white: #f8f8ff;
+}
+
+body {
+  color: var(--p-c-black);
+  background: var(--p-c-ghost-white);
 }
