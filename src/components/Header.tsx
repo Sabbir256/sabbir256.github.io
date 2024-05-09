@@ -11,14 +11,22 @@ function Header() {
           Software Engineer
         </h2>
         <p className="mt-4 leading-normal">I build things for web</p>
-      </div>
 
-      <nav className="hidden lg:flex flex-col gap-1 [&>*]:tracking-wider text-sm font-[500]">
-        <a href="#about">ABOUT</a>
-        <a href="#experience">EXPERIENCE</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#blog">BLOG</a>
-      </nav>
+        <nav className="hidden mt-16 lg:flex lg:flex-col [&>*]:tracking-wider text-xs font-medium">
+          <a href="#about" className="py-2.5 hover:text-blue-600">
+            ABOUT
+          </a>
+          <a href="#experience" className="py-2.5 hover:text-blue-600">
+            EXPERIENCE
+          </a>
+          <a href="#projects" className="py-2.5 hover:text-blue-600">
+            PROJECTS
+          </a>
+          <a href="#blog" className="py-2.5 hover:text-blue-600">
+            BLOG
+          </a>
+        </nav>
+      </div>
 
       <footer className="mt-8 flex gap-5 items-center">
         <a
