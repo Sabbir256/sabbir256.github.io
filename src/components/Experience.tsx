@@ -7,7 +7,7 @@ function Experience() {
       id="experience"
       className="mb-16 flex flex-col scroll-mt-16 mg:mb-24 lg:scroll-mt-24 lg:mb-28"
     >
-      <h2 className="font-medium mb-5 lg:hidden tracking-wider">EXPERIENCE</h2>
+      <h2 className="font-medium mb-6 lg:hidden tracking-wider">EXPERIENCE</h2>
       <Card
         title="Software Engineer"
         org="ReliSource"
@@ -35,7 +35,7 @@ function Experience() {
         duration="2023 - PRESENT"
       /> */}
 
-      <div className="mt-8">
+      <div className="lg:mt-8">
         <Link title="View Full Résumé" url="./resume.pdf" />
       </div>
     </section>
