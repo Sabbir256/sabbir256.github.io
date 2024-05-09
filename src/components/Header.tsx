@@ -11,12 +11,15 @@ function Header() {
     <header className="lg:w-1/2 lg:sticky lg:top-0 lg:max-h-screen lg:py-24 lg:flex lg:flex-col lg:justify-between">
       <div className="flex flex-col">
         <h1 className="text-4xl font-bold sm:text-5xl tracking-tighter">
-          Sabbir Ahmed
+          <a href="/">Sabbir Ahmed</a>
         </h1>
         <h2 className="mt-3 text-xl font-medium sm:text-xl">
           Software Engineer
         </h2>
-        <p className="mt-4 leading-normal">I build things for web</p>
+        <p className="mt-4 leading-normal max-w-xs">
+          I build things for the web, engineer and develop robust systems for
+          clients.
+        </p>
 
         <nav className="hidden mt-16 lg:flex lg:flex-col [&>*]:tracking-wider text-xs font-medium">
           <a href="#about" className="py-2.5 hover:text-blue-600">
