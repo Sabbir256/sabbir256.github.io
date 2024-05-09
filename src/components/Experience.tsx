@@ -11,13 +11,15 @@ function Experience() {
       <Card
         title="Software Engineer"
         org="ReliSource"
-        body="Build, maintain, and ship production codes for client applications. Improve system performance and security. Closely work with cross functional teams to design and implement new systems. Worked with the UI team to engineer and improve major features."
+        body="Build, maintain, and ship robust production codes for client applications. Improve system performance and security. Closely work along with cross functional teams to design and implement new systems. Worked with the UI team to engineer and improve major features."
         skills={[
           "Ruby on Rails",
           "Apex",
           "React",
           "AngularJS",
           "jQuery",
+          "Postgres",
+          "TypeScript",
           "Visualforce",
           "AWS",
           "Azure",
