@@ -1,4 +1,10 @@
-import { IconGithub, IconInstagram, IconLinkedin, IconX } from "@/icons";
+import {
+  IconGithub,
+  IconInstagram,
+  IconLeetcode,
+  IconLinkedin,
+  IconX,
+} from "@/icons";
 
 function Header() {
   return (
@@ -33,6 +39,9 @@ function Header() {
           href="https://github.com/sabbir256"
           target="_blank"
           className="opacity-90 hover:opacity-100"
+          aria-label="Github (opens in new tab)"
+          rel="noreferrer noopener"
+          title="GitHub"
         >
           <IconGithub className="size-6" />
         </a>
@@ -40,13 +49,29 @@ function Header() {
           href="https://www.linkedin.com/in/sabbir96/"
           target="_blank"
           className="opacity-90 hover:opacity-100"
+          aria-label="LinkedIn (opens in new tab)"
+          rel="noreferrer noopener"
+          title="LinkedIn"
         >
           <IconLinkedin className="size-6" />
+        </a>
+        <a
+          href="https://leetcode.com/u/Sabbir256/"
+          target="_blank"
+          className="opacity-90 hover:opacity-100"
+          aria-label="LeetCode (opens in new tab)"
+          rel="noreferrer noopener"
+          title="LeetCode"
+        >
+          <IconLeetcode className="size-6" />
         </a>
         <a
           href="https://www.instagram.com/isabbirahmed_/"
           target="_blank"
           className="opacity-90 hover:opacity-100"
+          aria-label="Instagram (opens in new tab)"
+          rel="noreferrer noopener"
+          title="Instagram"
         >
           <IconInstagram className="size-6" />
         </a>
@@ -54,6 +79,9 @@ function Header() {
           href="https://x.com/mesabbir_"
           target="_blank"
           className="opacity-90 hover:opacity-100"
+          aria-label="Twitter (now X, opens in new tab)"
+          rel="noreferrer noopener"
+          title="Twitter"
         >
           <IconX className="size-6" />
         </a>
