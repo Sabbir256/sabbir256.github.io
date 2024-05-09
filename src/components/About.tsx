@@ -1,6 +1,9 @@
 function About() {
   return (
-    <section id="about">
+    <section
+      id="about"
+      className="mb-16 scroll-mt-16 mg:mb-24 lg:scroll-mt-24 lg:mb-28"
+    >
       <h2 className="font-medium mb-5 lg:hidden tracking-wider">ABOUT</h2>
       <div className="flex flex-col gap-4 leading-[1.6]">
         <p>Hi there! 👋 I'm Sabbir. </p>

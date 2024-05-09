@@ -1,4 +1,5 @@
 import About from "@components/About";
+import Experience from "@components/Experience";
 import Header from "@components/Header";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
         <Header />
         <main className="pt-24 lg:w-1/2 lg:py-24">
           <About />
+          <Experience />
         </main>
       </div>
     </div>
