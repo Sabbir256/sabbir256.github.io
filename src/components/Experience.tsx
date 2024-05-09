@@ -1,5 +1,5 @@
-import Card from "@components/ui/Card";
-import Link from "./ui/Link";
+import Card from "@/components/ui/Card";
+import Link from "@/components/ui/Link";
 
 function Experience() {
   return (
