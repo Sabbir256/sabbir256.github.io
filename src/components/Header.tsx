@@ -11,7 +11,7 @@ function Header() {
   return (
     <header className="lg:w-1/2 lg:sticky lg:top-0 lg:max-h-screen lg:py-24 lg:flex lg:flex-col lg:justify-between">
       <div className="flex flex-col">
-        <h1 className="text-4xl font-bold sm:text-5xl tracking-tighter">
+        <h1 className="text-4xl font-bold sm:text-5xl tracking-tighter text-gray-800">
           <a href="/">Sabbir Ahmed</a>
         </h1>
         <h2 className="mt-3 text-xl font-medium sm:text-xl">
@@ -21,11 +21,10 @@ function Header() {
           I build things for the web, engineer and develop robust systems for
           clients.
         </p>
-
         <Navbar />
       </div>
 
-      <footer className="mt-8 flex gap-5 items-center">
+      <div className="mt-8 flex gap-5 items-center">
         <a
           href="https://github.com/sabbir256"
           target="_blank"
@@ -76,7 +75,7 @@ function Header() {
         >
           <IconX className="size-6" />
         </a>
-      </footer>
+      </div>
     </header>
   );
 }
