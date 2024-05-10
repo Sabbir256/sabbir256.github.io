@@ -26,7 +26,7 @@ function About() {
           My interests range from distributed systems and big data to AI. I'm constantly driven to push my boundaries and explore new technological horizons. 🚀
         </p>
         <p>
-          Outside of work, I'm deeply committed to personal growth and self-improvement. I firmly believe in the power of continuous learning, both professionally and personally. In my downtime, you will find me lost in the pages of a captivating book 📚 or listening to podcasts 🎙️
+          Outside of work, I'm deeply committed to personal growth and self-improvement. I firmly believe in the power of continuous learning, both professionally and personally. In my downtime, you will often find me lost in the pages of a captivating book 📚 or listening to podcasts 🎙️
         </p>
       </div>
     </section>

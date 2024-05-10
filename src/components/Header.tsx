@@ -5,6 +5,7 @@ import {
   IconLinkedin,
   IconX,
 } from "@/icons";
+import Navbar from "./Navbar";
 
 function Header() {
   return (
@@ -16,25 +17,12 @@ function Header() {
         <h2 className="mt-3 text-xl font-medium sm:text-xl">
           Software Engineer
         </h2>
-        <p className="mt-4 leading-normal max-w-xs">
+        <p className="mt-4 leading-normal max-w-xs text-gray-800">
           I build things for the web, engineer and develop robust systems for
           clients.
         </p>
 
-        <nav className="hidden mt-16 lg:flex lg:flex-col [&>*]:tracking-wider text-xs font-medium">
-          <a href="#about" className="py-2.5 hover:text-blue-600">
-            ABOUT
-          </a>
-          <a href="#experience" className="py-2.5 hover:text-blue-600">
-            EXPERIENCE
-          </a>
-          <a href="#projects" className="py-2.5 hover:text-blue-600">
-            PROJECTS
-          </a>
-          <a href="#blog" className="py-2.5 hover:text-blue-600">
-            BLOG
-          </a>
-        </nav>
+        <Navbar />
       </div>
 
       <footer className="mt-8 flex gap-5 items-center">
