@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Header from "@/components/Header";
+import Projects from "@/components/Projects";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <main className="pt-24 lg:w-1/2 lg:py-24">
           <About />
           <Experience />
+          <Projects />
         </main>
       </div>
     </div>
