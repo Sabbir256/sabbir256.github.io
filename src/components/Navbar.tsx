@@ -68,8 +68,8 @@ function getLinkClass() {
 function NavLink({ title }: { title: string }) {
   return (
     <>
-      <span className="w-8 h-[1px] bg-gray-600 block group-hover:w-14 transition-[width] group-hover:bg-blue-600 group-[.active]:bg-blue-600 group-[.active]:w-14"></span>
-      <span className="group-hover:text-blue-600 group-[.active]:text-blue-600">
+      <span className="w-8 h-[1px] bg-gray-600 block group-hover:w-16 transition-[width] group-hover:bg-blue-600 group-[.active]:bg-blue-600 group-[.active]:w-16"></span>
+      <span className="group-hover:text-blue-600 group-[.active]:text-blue-600 tracking-wider">
         {title}
       </span>
     </>
