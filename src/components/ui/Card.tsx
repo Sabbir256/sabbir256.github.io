@@ -14,7 +14,7 @@ function Card({ title, org, body, skills, duration, promotions, url }: Props) {
   return (
     <div
       className="grid sm:grid-cols-8 sm:gap-8 md:gap-4 mb-12 lg:mb-6 group hover:cursor-pointer relative z-10 pb-1"
-      onClick={() => window.open(url, "_blank")}
+      onClick={() => window.open(url, "_blank", "noreferrer noopener")}
     >
       <span className="hidden lg:block absolute group-hover:bg-blue-300/10 -inset-y-4 -inset-x-6 rounded z-0"></span>
       <div className="sm:col-span-2 mb-2 md:mb-0 leading-wider text-xs font-semibold lg:whitespace-nowrap lg:mt-1 text-gray-600">

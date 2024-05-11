@@ -37,7 +37,7 @@ function Navbar() {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-300}
             duration={750}
           >
             <NavLink title="PROJECTS" />

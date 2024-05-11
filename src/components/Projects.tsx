@@ -7,11 +7,23 @@ function Projects() {
       className="mb-16 scroll-mt-16 mg:mb-24 lg:scroll-mt-24 lg:mb-28"
     >
       <h2 className="font-medium mb-6 lg:hidden tracking-wider">PROJECTS</h2>
+
+      <ProjectCard
+        title="A NoSQL Key/Value Store Like Redis"
+        url="https://github.com/sabbir256/fastdb"
+        body="An in-memory NoSQL key/value store like Redis, implemented using golang. Data is kept in memory, and input commands are stored on disk periodically using Append only File(AOF) technique. This way data can be restored in case of a system crash. Supports Redis commands."
+        skills={["Golang", "RESP", "buffer", "Redis"]}
+        imgSrc="./images/fastdb.jpeg"
+        imgAlt="An in-memory NoSQL Database"
+      />
+
       <ProjectCard
         title="Portfolio Website (v1)"
         url="https://sabbir256.github.io/"
         body="An old portfolio site built with jQuery, Parallax, Bootstrap and is hosted on GitHub Pages."
         skills={["jQuery", "Bootstrap", "HTML", "CSS", "JavaScript"]}
+        imgSrc="./images/portfolio-site-v1.png"
+        imgAlt="Portfolio Website (v1)"
       />
     </section>
   );
@@ -22,11 +34,16 @@ type CardProps = {
   url: string;
   body: string;
   skills?: string[];
+  imgSrc: string;
+  imgAlt: string;
 };
 
-function ProjectCard({ title, url, body, skills }: CardProps) {
+function ProjectCard({ title, url, body, skills, imgSrc, imgAlt }: CardProps) {
   return (
-    <div className="group grid sm:gap-8 pb-1 md:gap-4 sm:grid-cols-8 z-10 relative cursor-pointer">
+    <div
+      className="group grid sm:gap-8 pb-1 md:gap-4 sm:grid-cols-8 z-10 relative cursor-pointer mb-12"
+      onClick={() => window.open(url, "_blank", "noreferrer noopener")}
+    >
       <span className="hidden lg:block absolute group-hover:bg-blue-300/10 -inset-y-4 -inset-x-6 rounded z-0"></span>
       <div className="sm:col-span-6 sm:order-2 lg:flex lg:flex-col">
         <h3 className="leading-tight text-black">
@@ -39,8 +56,8 @@ function ProjectCard({ title, url, body, skills }: CardProps) {
         </div>
       </div>
       <img
-        src="./images/portfolio-site-v1.png"
-        alt="portfolio v1"
+        src={imgSrc}
+        alt={imgAlt ?? "IMG NOT FOUND"}
         loading="lazy"
         width={200}
         height={48}

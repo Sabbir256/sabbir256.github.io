@@ -37,7 +37,7 @@ function Experience() {
         duration="2023 - PRESENT"
       /> */}
 
-      <div className="lg:mt-8">
+      <div className="lg:mt-6">
         <Link title="View Full Résumé" url="./resume.pdf" />
       </div>
     </section>
