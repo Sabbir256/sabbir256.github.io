@@ -12,10 +12,7 @@ type Props = {
 
 function Card({ title, org, body, skills, duration, promotions, url }: Props) {
   return (
-    <div
-      className="grid sm:grid-cols-8 sm:gap-8 md:gap-4 mb-12 lg:mb-6 group hover:cursor-pointer relative z-10 pb-1"
-      onClick={() => window.open(url, "_blank", "noreferrer noopener")}
-    >
+    <div className="grid sm:grid-cols-8 sm:gap-8 md:gap-4 mb-12 lg:mb-6 group hover:cursor-pointer relative z-10 pb-1">
       <span className="hidden lg:block absolute group-hover:bg-blue-300/10 -inset-y-4 -inset-x-6 rounded z-0"></span>
       <div className="sm:col-span-2 mb-2 md:mb-0 leading-wider text-xs font-semibold lg:whitespace-nowrap lg:mt-1 text-gray-600">
         {duration ?? ""}
@@ -27,9 +24,10 @@ function Card({ title, org, body, skills, duration, promotions, url }: Props) {
           rel="noreferrer noopener"
           aria-label={`${title} at ${org} (opens ins a new tab)`}
         >
-          <h3 className="font-medium text-base leading-tight text-black group-hover:text-blue-600 relative inline-block">
+          <span className="hidden lg:block absolute rounded -inset-y-4 -inset-x-6 z-20"></span>
+          <h3 className="font-medium text-base leading-tight text-black group-hover:text-blue-600 relative inline-flex items-end">
             {title} · {org}
-            <IconArrowUpRight className="size-4 -right-5 bottom-0 absolute group-hover:-right-6 group-hover:bottom-1 transition-all" />
+            <IconArrowUpRight className="ml-1 size-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-[transform] duration-200" />
           </h3>
         </a>
         {promotions && getpromotions(promotions)}
