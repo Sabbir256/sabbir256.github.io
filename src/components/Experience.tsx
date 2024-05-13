@@ -1,5 +1,5 @@
 import Card from "@/components/ui/Card";
-import Link from "@/components/ui/Title";
+import { IconArrowUpRight } from "@/icons";
 
 function Experience() {
   return (
@@ -38,7 +38,15 @@ function Experience() {
       /> */}
 
       <div className="lg:mt-6">
-        <Link title="View Full Résumé" url="./resume.pdf" />
+        <a
+        href="./resume.pdf"
+        className="group leading-tight font-semibold inline-block relative hover:text-blue-600 transition-colors"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <span className="group-hover:text-blue-600">View Full Résumé</span>
+        <IconArrowUpRight className="size-4 -right-5 bottom-0 absolute group-hover:-right-6 group-hover:bottom-1 transition-[right,bottom] duration-200 leading-3 group-hover:text-blue-600" />
+      </a>
       </div>
     </section>
   );

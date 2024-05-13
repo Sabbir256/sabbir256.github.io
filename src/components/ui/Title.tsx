@@ -4,12 +4,12 @@ type Props = {
   title: string;
   url: string;
 };
-function Link({ title, url }: Props) {
+function Title({ title, url }: Props) {
   return (
     <>
       <a
         href={url}
-        className="group leading-tight font-medium text-base inline-block relative hover:text-blue-600 transition-colors"
+        className="group leading-tight inline-block relative hover:text-blue-600 transition-colors"
         target="_blank"
         rel="noreferrer noopener"
       >
@@ -20,4 +20,4 @@ function Link({ title, url }: Props) {
   );
 }
 
-export default Link;
+export default Title;

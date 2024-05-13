@@ -1,5 +1,5 @@
 import Title from "@/components/ui/Title";
-import { IconRight } from "@/icons";
+import { IconArrowRight } from "@/icons";
 import { Link } from "react-router-dom";
 
 function Projects() {
@@ -31,13 +31,13 @@ function Projects() {
       <div>
         <Link
           to="/portfolio/archive"
-          className="group leading-tight font-medium text-base relative transition-colors inline-block"
+          className="group leading-tight font-semibold relative transition-colors inline-flex items-center"
         >
-          <span className="text-black relative">
+          <span className="relative">
             <h3>View Full Project Archive</h3>
             <span className="absolute w-0 h-[1px] bg-blue-600 left-0 bottom-0 group-hover:w-full transition-[width]"></span>
           </span>
-          <IconRight className="size-6 -bottom-1 -right-6 absolute group-hover:-right-8 transition-[right] leading-3" />
+          <IconArrowRight className="ml-1 size-4 group-hover:translate-x-2 transition-transform" />
         </Link>
       </div>
     </section>
