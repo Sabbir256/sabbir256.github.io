@@ -1,6 +1,5 @@
 import Title from "@/components/ui/Title";
 import { IconArrowRight } from "@/icons";
-import { Link } from "react-router-dom";
 
 function Projects() {
   return (
@@ -29,16 +28,17 @@ function Projects() {
       />
 
       <div>
-        <Link
-          to="/portfolio/archive"
+        <a
+          href="https://sabbir256.github.io/archive"
           className="group leading-tight font-semibold relative transition-colors inline-flex items-center"
+          rel="noreferrer noopener"
         >
           <span className="relative">
             <h3>View Full Project Archive</h3>
             <span className="absolute w-0 h-[1px] bg-blue-600 left-0 bottom-0 group-hover:w-full transition-[width]"></span>
           </span>
           <IconArrowRight className="ml-1 size-4 group-hover:translate-x-2 transition-transform" />
-        </Link>
+        </a>
       </div>
     </section>
   );
