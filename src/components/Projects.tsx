@@ -1,4 +1,6 @@
-import Link from "./ui/Link";
+import Title from "@/components/ui/Title";
+import { IconRight } from "@/icons";
+import { Link } from "react-router-dom";
 
 function Projects() {
   return (
@@ -25,6 +27,19 @@ function Projects() {
         imgSrc="./images/portfolio-site-v1.png"
         imgAlt="Portfolio Website (v1)"
       />
+
+      <div>
+        <Link
+          to="/portfolio/archive"
+          className="group leading-tight font-medium text-base relative transition-colors inline-block"
+        >
+          <span className="text-black relative">
+            <h3>View Full Project Archive</h3>
+            <span className="absolute w-0 h-[1px] bg-blue-600 left-0 bottom-0 group-hover:w-full transition-[width]"></span>
+          </span>
+          <IconRight className="size-6 -bottom-1 -right-6 absolute group-hover:-right-8 transition-[right] leading-3" />
+        </Link>
+      </div>
     </section>
   );
 }
@@ -47,7 +62,7 @@ function ProjectCard({ title, url, body, skills, imgSrc, imgAlt }: CardProps) {
       <span className="hidden lg:block absolute group-hover:bg-blue-300/10 -inset-y-4 -inset-x-6 rounded z-0"></span>
       <div className="sm:col-span-6 sm:order-2 lg:flex lg:flex-col">
         <h3 className="leading-tight text-black">
-          <Link title={title} url={url} />
+          <Title title={title} url={url} />
         </h3>
         <span className="mt-2 text-sm">{body}</span>
         <div className="mt-2 flex flex-wrap">
