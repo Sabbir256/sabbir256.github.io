@@ -41,10 +41,36 @@ function ArchivePage() {
             github="https://github.com/Sabbir256/fastdb"
           />
           <TableRow
+            year="2023"
+            title="OpenAI Discord Chat Bot"
+            github="https://github.com/Sabbir256/GPT-3.5"
+            builtWith={["NodeJS", "OpenAI API", "Discord App"]}
+          />
+          <TableRow
+            year="2022"
+            title="Getting Started with Redux"
+            url="https://codesandbox.io/p/sandbox/redux-toolkit-q0qcyp"
+            builtWith={["React", "Redux"]}
+            viewUrl="codesandbox.io/redux-toolkit"
+          />
+          <TableRow
+            year="2021"
+            title="Uptime Monitoring API"
+            github="https://github.com/Sabbir256/uptime-monitoring-application"
+            builtWith={["Express", "MongoDB", "NodeJS"]}
+          />
+          <TableRow
             year="2020"
             title="Portfolio Website (v1)"
-            builtWith={["jQuery", "Bootstrap", "HTML", "CSS", "JavaScript"]}
+            builtWith={["jQuery", "Bootstrap", "HTML", "JavaScript"]}
             url="https://sabbir256.github.io"
+            viewUrl="sabbir256.github.io"
+          />
+          <TableRow
+            year="2020"
+            title="30 Days of Code: HackerRank"
+            github="https://github.com/Sabbir256/30-days-of-code"
+            builtWith={["C++"]}
           />
           <TableRow
             year="2018"
@@ -62,8 +88,9 @@ type TableRowProps = {
   year: string;
   title: string;
   madeAt?: string;
-  builtWith: string[];
+  builtWith?: string[];
   url?: string;
+  viewUrl?: string;
   github?: string;
 };
 
@@ -73,6 +100,7 @@ function TableRow({
   madeAt,
   builtWith,
   url,
+  viewUrl,
   github,
 }: TableRowProps) {
   return (
@@ -91,17 +119,18 @@ function TableRow({
       </td>
       <td className="py-4 pr-4 align-top text-sm hidden lg:table-cell">
         <ul className="flex flex-wrap -translate-y-1.5">
-          {builtWith.map((name, idx) => (
-            <li className="my-1 mr-1" key={idx + name}>
-              <div className="bg-blue-500/10 rounded-full px-3 py-1 text-xs text-blue-600 tracking-tight font-medium">
-                {name}
-              </div>
-            </li>
-          ))}
+          {builtWith &&
+            builtWith.map((name, idx) => (
+              <li className="my-1 mr-1" key={idx + name}>
+                <div className="bg-blue-500/10 rounded-full px-3 py-1 text-xs text-blue-600 tracking-tight font-medium">
+                  {name}
+                </div>
+              </li>
+            ))}
         </ul>
       </td>
       <td className="py-4 text-sm font-medium text-gray-800 align-top hidden sm:table-cell">
-        {url && <Title title={url.split("://")[1]} url={url} />}
+        {url && viewUrl && <Title title={viewUrl} url={url} />}
         {github && (
           <a
             href={github}
