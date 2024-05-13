@@ -58,7 +58,7 @@ function ProjectCard({ title, url, body, skills, imgSrc, imgAlt }: CardProps) {
     <div className="group grid sm:gap-8 pb-1 md:gap-4 sm:grid-cols-8 z-10 relative cursor-pointer mb-12">
       <span className="hidden lg:block absolute group-hover:bg-blue-300/10 -inset-y-4 -inset-x-6 rounded z-0"></span>
       <div className="sm:col-span-6 sm:order-2 lg:flex lg:flex-col">
-        <h3 className="leading-tight text-black font-medium">
+        <h3 className="leading-tight text-black font-medium mb-2">
           <Title title={title} url={url} />
         </h3>
         <span className="mt-2 text-sm">{body}</span>
