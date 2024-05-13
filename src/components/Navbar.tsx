@@ -43,7 +43,7 @@ function Navbar() {
             <NavLink title="PROJECTS" />
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             className={getLinkClass()}
             activeClass="active"
@@ -55,7 +55,7 @@ function Navbar() {
           >
             <NavLink title="BLOG" />
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
