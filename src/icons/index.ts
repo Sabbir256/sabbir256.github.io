@@ -4,3 +4,4 @@ export * from "./IconX";
 export * from "./IconInstagram";
 export * from "./IconArrowUpRight";
 export * from "./IconLeetCode";
+export * from "./IconRight";
