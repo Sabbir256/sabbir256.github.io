@@ -20,7 +20,7 @@ function Projects() {
 
       <ProjectCard
         title="Portfolio Website (v1)"
-        url="https://sabbir256.github.io/"
+        url="https://sabbir256.github.io/portfolio-v1"
         body="An old portfolio site built with jQuery, Parallax, Bootstrap and is hosted on GitHub Pages."
         skills={["jQuery", "Bootstrap", "HTML", "CSS", "JavaScript"]}
         imgSrc="./images/portfolio-site-v1.png"
