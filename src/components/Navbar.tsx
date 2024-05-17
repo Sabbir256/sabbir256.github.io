@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 function Navbar() {
   return (
     <nav className="hidden mt-16 lg:block">
-      <ul className="lg:flex lg:flex-col text-xs font-semibold [&>*]:hover:cursor-pointer text-gray-600 max-w-fit">
+      <ul className="lg:flex lg:flex-col text-xs font-semibold [&>*]:hover:cursor-pointer text-zinc-600 max-w-fit">
         <li>
           <Link
             className={getLinkClass()}
