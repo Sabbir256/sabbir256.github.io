@@ -20,9 +20,9 @@ function Experience() {
           "jQuery",
           "Postgres",
           "TypeScript",
-          "Visualforce",
+          "Salesforce",
           "AWS",
-          "Azure",
+          "Azure"
         ]}
         duration="2022 - PRESENT"
         url="https://www.relisource.com/"

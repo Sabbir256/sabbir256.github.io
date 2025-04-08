@@ -8,7 +8,7 @@ function About() {
       <div className="flex flex-col gap-4 leading-[1.6]">
         <p>Hi there! 👋 I'm Sabbir. </p>
         <p>
-          I'm a software engineer with over 2 years of hands-on experience,
+          I'm a software engineer with {new Date(Date.now() - new Date("2022/02/08")).getFullYear() - 1970} years of hands-on experience,
           currently working at{" "}
           <a
             href="https://www.relisource.com/"
@@ -20,7 +20,7 @@ function About() {
           in Bangladesh. I deal with things like building the backbones of web applications, managing data in the cloud, and making websites look good and work smoothly.
         </p>
         <p>
-          During my software engineering career, I have worked with multiple programming languages, libraries, frameworks, and technologies such as Ruby on Rails, Apex, TypeScript, React, Postgres, AngularJS, and AWS.
+          During my software engineering career, I have worked with multiple programming languages, libraries, frameworks, and technologies such as Python, Flask, Ruby on Rails, Apex, TypeScript, React, Postgres, AngularJS, and AWS.
         </p>
         <p>
           My interests range from distributed systems and big data to AI. I'm constantly driven to push my boundaries and explore new technological horizons. 🚀
