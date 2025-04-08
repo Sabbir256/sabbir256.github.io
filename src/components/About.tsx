@@ -1,4 +1,6 @@
 function About() {
+  const numOfExperienceYears = new Date(Date.now() - Number(new Date("2022/02/08"))).getFullYear() - 1970;
+
   return (
     <section
       id="about"
@@ -8,7 +10,7 @@ function About() {
       <div className="flex flex-col gap-4 leading-[1.6]">
         <p>Hi there! 👋 I'm Sabbir. </p>
         <p>
-          I'm a software engineer with {new Date(Date.now() - new Date("2022/02/08")).getFullYear() - 1970} years of hands-on experience,
+          I'm a software engineer with { numOfExperienceYears } years of hands-on experience,
           currently working at{" "}
           <a
             href="https://www.relisource.com/"
