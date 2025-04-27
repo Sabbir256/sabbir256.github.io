@@ -10,6 +10,15 @@ function Projects() {
       <h2 className="font-medium mb-6 lg:hidden tracking-wider">PROJECTS</h2>
 
       <ProjectCard
+        title="Taskman: A Powerful CLI Based Task Manager"
+        url="https://github.com/sabbir256/taskman"
+        body="Simple and powerful CLI based task manager built with Cobra. A CSV file is used as a database for data consistency. Since this is a CLI application, UI is handled using Table Writer and ASCII commands."
+        skills={["Golang", "Cobra", "Table Writer"]}
+        imgSrc="./images/taskman.png"
+        imgAlt="Taskman: CLI based task manager"
+      />
+
+      <ProjectCard
         title="A NoSQL Key/Value Store Like Redis"
         url="https://github.com/sabbir256/fastdb"
         body="An in-memory NoSQL key/value store like Redis, implemented using golang. Data is kept in memory, and input commands are stored on disk periodically using Append only File(AOF) technique. This way data can be restored in case of a system crash. Supports Redis commands."
