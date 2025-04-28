@@ -12,7 +12,7 @@ function Blogs() {
         title="How Notion Sped Up 20 Times In The Browser"
         url="https://www.linkedin.com/pulse/how-notion-sped-up-20-times-browser-sabbir-ahmed-acpac"
         year={2024}
-        imgSrc="./images/notion-blog-banner.png"
+        imgSrc="./images/notion-blog-banner.webp"
         imgAlt="notion-blog"
       />
     </section>

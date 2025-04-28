@@ -14,7 +14,7 @@ function Projects() {
         url="https://github.com/sabbir256/taskman"
         body="Simple and powerful CLI based task manager built with Cobra. A CSV file is used as a database for data consistency. Since this is a CLI application, UI is handled using Table Writer and ASCII commands."
         skills={["Golang", "Cobra", "Table Writer"]}
-        imgSrc="./images/taskman.png"
+        imgSrc="./images/taskman.webp"
         imgAlt="Taskman: CLI based task manager"
       />
 
@@ -23,7 +23,7 @@ function Projects() {
         url="https://github.com/sabbir256/fastdb"
         body="An in-memory NoSQL key/value store like Redis, implemented using golang. Data is kept in memory, and input commands are stored on disk periodically using Append only File(AOF) technique. This way data can be restored in case of a system crash. Supports Redis commands."
         skills={["Golang", "RESP", "buffer", "Redis"]}
-        imgSrc="./images/fastdb.jpeg"
+        imgSrc="./images/fastdb.webp"
         imgAlt="An in-memory NoSQL Database"
       />
 
@@ -32,7 +32,7 @@ function Projects() {
         url="https://sabbir256.github.io/portfolio-v1"
         body="An old portfolio site built with jQuery, Parallax, Bootstrap and is hosted on GitHub Pages."
         skills={["jQuery", "Bootstrap", "HTML", "CSS", "JavaScript"]}
-        imgSrc="./images/portfolio-site-v1.png"
+        imgSrc="./images/portfolio-site-v1.webp"
         imgAlt="Portfolio Website (v1)"
       />
 
